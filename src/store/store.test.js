@@ -10,7 +10,7 @@ describe('Store', () =>{
     const store = createStore(rootReducer, initialState);
     const course = {
       title: 'Clean Code'
-    }
+    };
 
     //act
     const action = courseActions.createCourseSuccess(course);
@@ -23,5 +23,5 @@ describe('Store', () =>{
     };
 
     expect(actual).toEqual(expected);
-  })
+  });
 });
